@@ -2,14 +2,20 @@
 
 string uzivatel = Console.ReadLine();
 int cislo = int.Parse(uzivatel);
-int konecne_cislo = 0;
+string konecne_cislo = "";
 
-for (int i = 0; i < cislo; i++)
+for (int i = 1; i <= cislo; i++)
 {
-    konecne_cislo += i;
+    for(int j = 1; j <= i; j++)
+    {
+        konecne_cislo +=  i;
+        
+
+    }
+    Console.WriteLine(konecne_cislo);
 }
 
-Console.WriteLine(konecne_cislo);
+
 
 
 /*string uzivatel = Console.ReadLine();
