@@ -9,10 +9,11 @@ for (int i = 1; i <= cislo; i++)
     for(int j = 1; j <= i; j++)
     {
         konecne_cislo +=  i;
+        Console.WriteLine(i);
         
 
     }
-    Console.WriteLine(konecne_cislo);
+    Console.WriteLine("");
 }
 
 
