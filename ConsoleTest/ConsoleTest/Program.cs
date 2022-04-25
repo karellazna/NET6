@@ -1,6 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 string uzivatel = Console.ReadLine();
+int cislo = int.Parse(uzivatel);
+int konecne_cislo = 0;
+
+for (int i = 0; i < cislo; i++)
+{
+    konecne_cislo += i;
+}
+
+Console.WriteLine(konecne_cislo);
+
+
+/*string uzivatel = Console.ReadLine();
 int cislo_dne = int.Parse(uzivatel);
 switch (cislo_dne)
 {
@@ -32,4 +44,5 @@ if (cislo_dne == 6 || cislo_dne == 7)
 }else
 {
     Console.WriteLine("Jedná se o pracovní den");
-}
+}*/
+
