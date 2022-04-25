@@ -26,3 +26,10 @@ switch (cislo_dne)
         Console.WriteLine("Nedele");
         break;
 }
+if (cislo_dne == 6 || cislo_dne == 7)
+{
+    Console.WriteLine("Jedná se o víkend");
+}else
+{
+    Console.WriteLine("Jedná se o pracovní den");
+}
