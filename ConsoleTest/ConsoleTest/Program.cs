@@ -15,3 +15,4 @@ vw.SPZ = "3U2-6666";
 vw.Barva = "modra";
 vw.NajeteKM = 5000;
 
+CarManagment.OverSPZ(vw.SPZ);

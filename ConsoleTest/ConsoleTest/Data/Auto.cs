@@ -26,11 +26,5 @@ namespace ConsoleTest.Data
             Znacka = Znacka;
         }
 
-        public static string overitKradeneAuto()
-        { 
-            //JAK ACCESNU TU PROMENOU SPZ ? 
-            return "Je kradene";
-        }
-
     }
 }
