@@ -15,12 +15,13 @@ namespace ConsoleTest.Model
             Console.WriteLine($"x: {X} y: {Y}");
         }
 
-        public void VypocetObsahuZeSouradnic()
+        public double VypocetObsahuZeSouradnic()
         {
             
             double vysledek = X * Y;
 
             Console.WriteLine($"Obsah je: {vysledek} metru ctverecnich");
+            return vysledek;
         }
 
         public Point2D(double x, double y)
