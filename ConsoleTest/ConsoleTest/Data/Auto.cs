@@ -30,5 +30,22 @@ namespace ConsoleTest.Data
             return Znacka;
         }
 
+        public static void SetSPZ(string spz)
+        {
+            SPZ = spz;
+        }
+        public static void SetBarva(string barva)
+        {
+            Barva = barva;
+        }
+        public static void SetNajeteKM(double najeteKM)
+        {
+            NajeteKM = najeteKM;
+        }
+        public static void SetZnacka(string znacka)
+        {
+            Znacka = znacka;
+        }
+
     }
 }
