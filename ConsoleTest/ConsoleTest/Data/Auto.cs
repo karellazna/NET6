@@ -8,43 +8,22 @@ namespace ConsoleTest.Data
 {
     internal class Auto
     {
-        private static string SPZ;
-        private static string Barva;
-        private static double NajeteKM;
-        private static string Znacka;
+        public string SPZ { get; set; }
+        public string Barva { get; set; }
+        public double NajeteKM { get; set; }
+        public string Znacka { get; set; }
 
-        public static string GetSPZ()
+        public Auto()
         {
-            return SPZ;
-        }
-        public static string GetBarva()
-        {
-            return Barva;
-        }
-        public static double GetNajeteKM()
-        {
-            return NajeteKM;
-        }
-        public static string GetZnacka()
-        {
-            return Znacka;
+
         }
 
-        public static void SetSPZ(string spz)
+        public Auto(string spz, string barva, double najeteKM, string znacka)
         {
             SPZ = spz;
-        }
-        public static void SetBarva(string barva)
-        {
             Barva = barva;
-        }
-        public static void SetNajeteKM(double najeteKM)
-        {
             NajeteKM = najeteKM;
-        }
-        public static void SetZnacka(string znacka)
-        {
-            Znacka = znacka;
+            Znacka = Znacka;
         }
 
     }
