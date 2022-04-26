@@ -6,74 +6,51 @@ using System.Threading.Tasks;
 
 namespace ConsoleTest.Model
 {
-    public enum Quadranty
-    {
-        Quadrant_I,
-        Quadrant_II,
-        Quadrant_III,
-        Quadrant_IV,
-        Error
-    }
-
     internal class Point2D
     {
-
-        
-
-        public double X { get; set; }
-        public double Y { get; set; } 
-        public void Print()
+        public Point2D(double _x, double _y)
         {
-            Console.WriteLine($"x: {X} y: {Y}");
-        }
-
-        public double VypocetObsahuZeSouradnic()
-        {
-            
-            double vysledek = X * Y;
-
-            Console.WriteLine($"Obsah je: {vysledek} metru ctverecnich");
-            return vysledek;
-        }
-
-        public Quadranty ZjistiQuadrant()
-        {
-            if (X >= 0 && Y >= 0)
-            {
-                return Quadranty.Quadrant_I;
-            } else if (X < 0 && Y >= 0)
-            {
-                return Quadranty.Quadrant_II;
-            } else if (X < 0 && Y < 0)
-            {
-                return Quadranty.Quadrant_III;
-            } else if (X >= 0 && Y < 0)
-            {
-                return Quadranty.Quadrant_IV;
-            }
-            else
-            {
-                return Quadranty.Error;
-
-            }
-
-        }
-
-        public Point2D(double x, double y)
-        {
-            X = x;
-            Y = y;
+            X = _x;
+            Y = _y;
         }
 
         public Point2D()
         {
 
         }
+        public double X { get; set; }
+        public double Y { get; set; }
 
+        public void Print()
+        {
+            Console.WriteLine($"x: {X} y: {Y}");
+        }
 
         public override string ToString()
         {
-            return $"{X},{Y}";
+            return $"x: {X} y: {Y}";
+        }
+
+        public double CalculateArea()
+        {
+            return Math.Abs(X) * Math.Abs(Y);
+        }
+
+        public Quadrant GetQuadrant()
+        {
+            if (X == 0 && Y == 0)
+                return Quadrant.Origin;
+
+            if (X >= 0 && Y >= 0)
+                return Quadrant.Quadrant1;
+            else if (X < 0 && Y >= 0)
+                return Quadrant.Quadrant2;
+            else if (X < 0 && Y < 0)
+                return Quadrant.Quadrant3;
+            else if (X >= 0 && Y < 0)
+                return Quadrant.Quadrant4;
+
+            return Quadrant.Error;
         }
     }
 }
