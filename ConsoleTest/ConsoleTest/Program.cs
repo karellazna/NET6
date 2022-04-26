@@ -1,10 +1,5 @@
 ﻿using ConsoleTest.Model;
 
-Bod bodX = new Bod();
-Bod bodY = new Bod();
+Point2D p1 = new Point2D(15, 333.3);
 
-bodX.bodX = 10;
-bodX.bodY = 20;
-
-bodY.bodY = 50;
-bodY.bodX = 100;
+p1.VypocetObsahuZeSouradnic(5, 4);
