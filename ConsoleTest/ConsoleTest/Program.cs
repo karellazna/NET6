@@ -9,4 +9,9 @@ Console.WriteLine(p2);
 Point2D vetsi = Math2D.MaxAreaFromOrigin(p1, p2);
 Console.WriteLine($"větší obsah má bod {vetsi}");
 
-string VW = Auto.
+Auto vw = new Auto();
+vw.Znacka = "VW";
+vw.SPZ = "3U2-6666";
+vw.Barva = "modra";
+vw.NajeteKM = 5000;
+
