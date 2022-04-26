@@ -1,30 +1,10 @@
-﻿int konecne_cislo = 0;
+﻿using ConsoleTest.Model;
 
-do
-{
-    int cislo = int.Parse(Console.ReadLine());
-    konecne_cislo += cislo;
-}
-while (Console.ReadLine() != "Q");
- 
-Console.WriteLine(konecne_cislo);
+Bod bodX = new Bod();
+Bod bodY = new Bod();
 
+bodX.bodX = 10;
+bodX.bodY = 20;
 
-
-
-
-
-
-
-
-
-enum denVTydnu
-{
-    PONDELI,
-    UTERY,
-    STREDA,
-    CTVRTEK,
-    PATEK,
-    SOBOTA,
-    NEDELE
-}
+bodY.bodY = 50;
+bodY.bodX = 100;
