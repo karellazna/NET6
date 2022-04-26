@@ -70,5 +70,10 @@ namespace ConsoleTest.Model
 
         }
 
+
+        public override string ToString()
+        {
+            return $"{X},{Y}";
+        }
     }
 }
