@@ -26,6 +26,7 @@ namespace ConsoleTest.Model
         }
 
         public DateTime DateOfBirth { get; set; }
+        public Adresa Adresa { get; set; }
 
         public override string ToString()
         {

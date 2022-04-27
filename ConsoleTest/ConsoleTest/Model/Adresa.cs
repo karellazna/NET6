@@ -11,8 +11,13 @@ namespace ConsoleTest.Model
 
         public string Ulice { get; set; } = "";
         public string Mesto { get; set; } = "";
-        public string Země { get; set; } = "";
+        public string Zeme { get; set; } = "";
         public int Cislo_Popisne { get; set; } = 00000;
+
+        public override string ToString()
+        {
+            return $"{Ulice},{Mesto},{Zeme}, {Cislo_Popisne}";
+        }
 
     }
 }
