@@ -1,10 +1,15 @@
 ﻿using ConsoleTest.Model;
 using ConsoleTest.Data;
 
-int[] cisla = { 11, 2, 13, 44, -5, 6, 127, -99, 0, 256 };
+List<Person> lide = new List<Person>();
 
-var result = cisla.Where(x => -50 < x && x > 50);
-foreach (int x in result)
+for     (int i = 0; i < 50; i++)
 {
-    Console.WriteLine(x);
+    lide.Add(RandomPersonGenerator.GetRandomPerson());
 }
+
+var result = lide.OrderBy(osoba => osoba.DateOfBirth)
+    .Where(osoba => osoba.Address.Mesto == "Brno")
+    .First();
+
+Console.WriteLine(result);

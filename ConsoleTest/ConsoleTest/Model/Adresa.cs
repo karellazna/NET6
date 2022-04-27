@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleTest.Model
 {
-    internal class Adresa
+    public class Adresa
     {
 
         public string Ulice { get; set; } = "";

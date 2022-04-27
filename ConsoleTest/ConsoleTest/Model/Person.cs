@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleTest.Model
 {
-    internal class Person
+    public class Person
     {
+        public Person()
+        {
+        }
+
         public Person(string firstname, string lastname)
         {
             FirstName = firstname;
@@ -26,7 +30,7 @@ namespace ConsoleTest.Model
         }
 
         public DateTime DateOfBirth { get; set; }
-        public Adresa Adresa { get; set; }
+        public Adresa Address { get; set; } = new Adresa();
 
         public override string ToString()
         {
