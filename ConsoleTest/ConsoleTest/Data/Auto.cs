@@ -26,5 +26,11 @@ namespace ConsoleTest.Data
             Znacka = Znacka;
         }
 
+        public void AddKilometers(int km)
+        {
+            NajeteKM += km;
+        }
+
+
     }
 }

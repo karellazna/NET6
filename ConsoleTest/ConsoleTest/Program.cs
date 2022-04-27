@@ -15,4 +15,14 @@ vw.SPZ = "3U2-6666";
 vw.Barva = "modra";
 vw.NajeteKM = 5000;
 
-CarManagment.OverSPZ(vw.SPZ);
+bool stolen = CarManagment.OverSPZ(vw.SPZ);
+
+if (stolen)
+{
+    Console.WriteLine("kradene");
+}
+else
+{
+    Console.WriteLine("neni kradene"); 
+}
+CarManagment.LoadStolenCars(@"C:\Users\Karel LAZNA\source\repos\karellazna\NET6\ConsoleTest\ConsoleTest\soubor.txt"); 
