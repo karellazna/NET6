@@ -14,6 +14,7 @@
             <Button Content="pridat lidi" x:Name="Detail" Margin="10" Click="Detail_Click">
                 
             </Button>
+            <Button x:Name="btn_stahniDataset" Content="stahni" Click="Button_Click"/>
         </StackPanel>
         <DataGrid x:Name="dgDataset">
             

@@ -12,12 +12,16 @@ namespace WpfApp1
     {
         public static List<Person> People = new List<Person>();
 
+        public static string PeopleAPIUrl = "https://localhost:7175";
+
         public static void GeneratePeople(int cnt)
         {
-            for(int i = 0; i < cnt; i++)
-            {
-                People.Add(RandomPersonGenerator.GetRandomPerson());
-            }
+            RandomPersonGenerator.GetPeople(cnt);
+        }
+
+        public static void LoadPeopleFromAPI(int cnt)
+        {
+
         }
 
     }

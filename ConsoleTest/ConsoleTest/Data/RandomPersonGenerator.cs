@@ -46,5 +46,15 @@ namespace ConsoleTest.Data
 
         }
 
+        public static List<Person> GetPeople(int kolik)
+        {
+            var people = new List<Person>();
+                for (int i = 0; i < kolik; i++)
+                {
+                    people.Add(GetRandomPerson());
+                }
+            return people;
+            
+        }
     }
 }
